@@ -15,10 +15,10 @@ def lps(S,i,j):
     #if there is only 2 characters in the string then return 2
     if(S[i]==S[j] and i+1==j):
         return 2
-    #if the left and right character of the string matches then return the value by adding 2
+    #if the first and last character of the string matches then return the value by adding 2
     if(S[i] == S[j]):
         return 2+lps(S,i+1,j-1)
-    #else find the length by skipping index from left and skipping index from right and return the maximmum of both the values
+    #else find the length by skipping index from first and skipping index from last and return the maximmum of both the values
     return max(lps(S,i+1,j),lps(S,i,j-1))
 
 
