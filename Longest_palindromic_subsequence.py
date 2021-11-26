@@ -6,7 +6,7 @@
 
 #longest palindromic subsequence using recursion
 def lps(S,i,j):
-    #if index of left chararcter exceeds the index of right character return 0
+    #if index of first chararcter exceeds the index of last character return 0
     if(i>j):
         return 0
     #if there is only one character in the string then return 1
